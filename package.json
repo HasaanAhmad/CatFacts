@@ -1,0 +1,16 @@
+{
+  "name": "jquery",
+  "version": "1.0.0",
+  "description": "Jquery Testing",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hasaan Ahmad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "yarn": "^1.22.17"
+  }
+}

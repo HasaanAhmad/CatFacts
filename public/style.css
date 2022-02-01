@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Dongle', sans-serif;
+}
+.navbar{
+    background-color: seagreen;
+    height: 4.5rem;
+}
+.navbar h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.catFact{
+   
+    background-color: black;
+    height: 80vh;
+    
+}
+.catFact h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.catFact img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80%;
+}
+.random{
+    position: absolute;
+}
+.random{
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 9rem 55rem;
+}
+.random:hover{
+    background-color: #008CBA;
+    color: white;
+}
+div h3{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 0rem;
+    }
+
+ @media only screen and (min-width: 768px){
+    
+
+    }

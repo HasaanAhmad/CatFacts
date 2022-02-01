@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fact About Cats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+
+<h1>RANDOM FACTS ABOUT CATS</h1>
+
+    </div>
+    <div class="catFact" >
+     <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80" alt="">
+     <h3 id="fact">CLICK TO LOAD THE RANDOM FACT</h3>
+     <div class="button">
+
+         <button class="random" id="randomize">Randomize! </button>
+        </div>
+    <h1>HERE IS THE CAT FACT</h1>
+
+</div>
+</body>
+</html>
+<script>
+
+    
+const btn = document.getElementById('randomize');
+ btn.addEventListener('click', ()=> {
+    document.getElementById('fact').innerHTML = 'Loading....';
+     console.log('clicked');
+    fetch('https://catfact.ninja/fact')
+        .then(response => response.json())
+        .then(data => {
+            const facts= data['fact'];
+            document.getElementById('fact').innerHTML = data['fact'];
+            
+    
+    })
+ })
+
+
+
+</script>
